@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" item="width=device-width, initial-scale=1.0">
+    <title>빠삐코 ::</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="menu.js"></script>
+    <script src="jQueryRotateCompressed.js"></script>
+    <script src="color-inversion.js"></script>
+</head>
+<body>
+    <div class='hidden-menu'></div>
+        <a class="open"><img class='menu-icon' src="css/menu-icon.png"></a>
+        <ul class="hide">
+            <li><a href="introduction.html"><span>빠삐코</span> 소개</a></li>
+            <li><a href="history.html">연혁</a></li>
+            <li><a href="cf.html">CF 모음</a></li>
+            <li><a href="gallery.html">갤러리</a></li>
+        </ul>
+    </div>
+    <div class="audio-section">
+        <audio src="css/summer-killer.mp3" controls></audio>
+        <h3>제발 들어주세요</h3>
+    </div>
+    <div class="page-wrapper">
+        <div class="head">
+            <header>
+                <div main-header>
+                    <img class="logo" src="css/logo-left.png">
+                    <h1><a href="index.html"><span>빠삐코</span></a></h1>
+                    <img class="logo" src="css/logo-right.png">
+                </div>
+                <audio  class="second-audio" controls src="css/summer-killer.mp3"></audio>
+            </header>
+        </div>
+        <div class="main-wrapper">
+            <div class="description">
+                <h3>올 여름 더위는 <span>빠삐코</span>에 맡겨 다오</h3>
+                <script>
+                    for(var size=2.7;size>1.7;size-=0.5){
+                        document.write("<h3 ");
+                        document.write("style='font-size:"+size+"em'>");
+                        document.write("다오");
+                        document.write("</h3>");
+                    }
+                </script>
+            </div>
+            <div class="navigator">
+                <nav>
+                    <ul>
+                        <li><a href="introduction.html"><span>빠삐코</span> 소개</a></li>
+                        <li><a href="history.html">연혁</a></li>
+                        <li><a href="cf.html">CF 모음</a></li>
+                        <li><a href="gallery.html">갤러리</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="article">
+                <div class="sorry">
+                    <h1>미안하다,,</h1>
+                    <p>이거 보여주려고 어그로 끌었다.. 빠삐코 추억 소환<br>ㄹㅇ 실화냐,,? 진짜 세계관 최강 아이스크림이다,,</p>
+                </div>
+                <div class="main-image">
+                    <img src="css/summer-killer.jpg" id="image" onmouseover="spin()">
+                </div>
+                <div class="shoppingLink">
+                    <h1 id="pc">$$ 빠삐코 내일 새벽 도착 보장!! $$</h1>
+                    <h3 id="mobile">$$ 빠삐코 내일 새벽 도착 보장!! $$</h3>
+                    <p id="itemLink" ><a href="https://www.coupang.com/vp/products/1395471409?itemId=2430790954&vendorItemId=70843056995&pickType=COU_PICK&q=%EB%B9%A0%EC%82%90%EC%BD%94&itemsCount=36&searchId=f5d904baa6574d9db53b8f3b185aed59&rank=1&isAddedCart="> >>> 당장 사러가기 <<< </a></p>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <footer>
+        <p>All rights reserved by 'BBABBIKO - Summer Killer'</p>
+    </footer>
+</body>
+</html>

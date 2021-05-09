@@ -1,0 +1,284 @@
+*{
+    font-family: 'Nanum Gothic', sans-serif;
+    margin: 0; padding: 0;
+}
+.menu-icon{
+    display: none;
+}
+.hidden-menu a{
+    cursor: pointer;
+}
+.hide{
+    display: none;
+    padding: 10px;
+    margin: 0 auto;
+    width: 95%; height: 100%;
+    text-align: center;
+    font-size:1.5em;
+    font-weight: 700;
+}
+.hide>li{
+    list-style-type: none;
+    padding: 10px;
+}
+.hide>li:not(:last-child){
+    margin-bottom: 5px;
+    border-bottom: 1px solid sienna;
+}
+.main-wrapper{
+    width: 95%;
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 100vh;
+    margin-bottom: 10px;
+}
+.description{
+    height: 100%;
+}
+.navigator{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+header{
+    padding: 20px;
+    margin: 100px auto;
+    text-align: center;
+}
+span{
+    font-weight: 700;
+    color: sienna;
+}
+h1>a{
+    font-size: 4.25em;
+}
+.description h3{
+    text-align: center;
+    margin: 15px auto;
+    font-size: 3.125em;
+}
+ul{
+    margin-top: 15px;
+    text-align: center;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.navigator li{
+    padding: 0 50px;
+    display: inline-block;
+    font-size: 2.5em;
+    list-style-type: none;
+}
+.navigator li:not(:last-child){
+    border-right: 2px solid black;
+}
+.main-header{
+    overflow: hidden;
+}
+h1{
+    display: inline;
+}
+.logo{
+    width: 100px; height: 100px;
+}
+.second-audio{
+    display: none;
+}
+.audio-section>audio{
+    position: absolute;
+    top: 10px; right: 10px;
+}
+.audio-section>h3{
+    font-size: 1.5em;
+    position: absolute;
+    top: 25px; right: 320px;
+}
+.article{
+    position: relative;
+    overflow: hidden;
+    margin: 100px auto; 
+    width: 100%;
+}
+.article>h1{
+    text-align: center;
+}
+.article-head{
+    margin-bottom: 15px;
+}
+.article-head>h1{
+    font-size: 3em;
+}
+.shoppingLink{
+    padding: 15px;
+    text-align: center;
+}
+.shoppingLink>h1, .shoppingLink>p{
+    margin-bottom: 5px;
+}
+.shoppingLink>h1{
+    padding: 50px;
+    animation-name: ppippo;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.shoppingLink>h3{
+    display: none;
+    animation-name: ppippo;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes ppippo{
+    0%{color: red;}
+    50%{color: green;}
+    100%{color: blue;}
+}
+.sorry{
+    overflow: hidden;
+    margin: 20px auto;
+    height:20%;
+    text-align: center;
+}
+.sorry>h1{
+    animation-name: headAppear;
+    animation-duration: 3s;
+    font-size: 3.1em;
+}
+.sorry>p{
+    animation-name: pAppear;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+    margin-top: 30px;
+    font-size: 1.3em;
+}
+@keyframes headAppear{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes pAppear{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.sub-head{
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 1.25em;
+}
+.sub-head>h1{
+    animation-name: textAppear;
+    animation-duration: 1s;
+}
+.content-img{
+    margin: 20px auto;
+    display: block;
+}
+.brothers{
+    margin: 20px auto;
+}
+@keyframes textAppear{
+    0%{
+        position: relative; 
+        bottom: 40px;}
+    100%{
+        position: relative; 
+        bottom: 0;}
+}
+p{
+    font-size: 1.25em;
+}
+.introduction{
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+    width: 100%; height: 33%;
+    overflow: hidden;
+}
+.introduction-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+    padding: 10px;
+    width: 100%; height: 33%;
+    overflow: hidden;
+}
+.icon{
+    margin-left: 20px;
+    width:100%;height: 100%;
+}
+.introduction-article{
+    margin: auto;
+    padding: 10px;
+    width: 60%; height: 100%;
+}
+.main-image{
+    text-align: center;
+}
+#image{
+    width: 100%; height: 50%;
+    max-width: 1200px;
+}
+footer{
+    background: sienna;
+    bottom: 0;
+    height: 50px;
+    padding-left: 15px;
+    font-weight: 700;
+    line-height: 50px;
+}
+@media screen and (max-width:645px){
+    .audio-section>audio{
+        display: none;
+    }
+    .second-audio{
+        display: unset;
+    }
+    .audio-section>h3{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+}
+@media screen and (max-width:990px){
+    .navigator{
+        display: none;
+    }
+    .introduction{
+        display: unset;
+    }
+    .introduction-reverse{
+        display: unset;
+    }
+    .introduction-article{
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+    .introduction-article p{
+        display: none;
+    }
+    .introduction-article h1{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .icon{
+        margin: 0 auto;
+    }
+    .menu-icon{
+        display: unset;
+    }
+    #pc{display:none;}
+    #mobile{display:unset;}
+    @keyframes textAppear{
+        0%{
+            position: relative; 
+            bottom: 60px;}
+        100%{
+            position: relative; 
+            bottom: 0;}
+    }
+}

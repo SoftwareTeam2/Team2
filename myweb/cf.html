@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" item="width=device-width, initial-scale=1.0">
+    <title>빠삐코 :: CF</title>
+    <link rel="stylesheet" href="css/cf-stylesheet.css">
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
+    <script src="menu.js"></script>
+</head>
+<body>
+    <div class='hidden-menu'></div>
+        <a class="open"><img class='icon' src="css/menu-icon.png"></a>
+        <ul class="hide">
+            <li><a href="introduction.html"><span>빠삐코</span> 소개</a></li>
+            <li><a href="history.html">연혁</a></li>
+            <li><a href="cf.html">CF 모음</a></li>
+            <li><a href="gallery.html">갤러리</a></li>
+        </ul>
+    </div>
+    <div class="audio-section">
+        <audio src="css/summer-killer.mp3" controls></audio>
+        <h3>제발 들어주세요</h3>
+    </div>
+    <div class="page-wrapper">
+        <div class="head">
+            <header>
+                <div main-header>
+                    <img class="logo" src="css/logo-left.png">
+                    <h1><a href="index.html"><span>빠삐코</span></a></h1>
+                    <img class="logo" src="css/logo-right.png">
+                </div>
+                <audio  class="second-audio" controls src="css/summer-killer.mp3"></audio>
+            </header>
+        </div>
+        <div class="main-wrapper">
+            <div class="description">
+                <h3>올 여름 더위는 <span>빠삐코</span>에 맡겨 다오</h3>
+                <script>
+                    for(var size=2.7;size>1.7;size-=0.5){
+                        document.write("<h3 ");
+                        document.write("style='font-size:"+size+"em'>");
+                        document.write("다오");
+                        document.write("</h3>");
+                    }
+                </script>
+            </div>
+            <div class="navigator">
+                <nav>
+                    <ul>
+                        <li><a href="introduction.html"><span>빠삐코</span> 소개</a></li>
+                        <li><a href="history.html">연혁</a></li>
+                        <li><a href="cf.html">CF 모음</a></li>
+                        <li><a href="gallery.html">갤러리</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="article">
+                <a href="#" id="hidden-prev"></a>
+                <a href="#" id="hidden-next"></a>
+                <div class="slider-container" id="slides">
+                    <ul class="slider-list">
+                        <li class="slide"><h1>근-본</h1><iframe  width="40%" height="400" src="https://www.youtube.com/embed/T6Ua34lPh_0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                        <li class="slide"><h1>2012년 버전</h1><iframe  width="40%" height="400" src="https://www.youtube.com/embed/EVGjM1msMiM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                        <li class="slide"><h1>'LEGEND'</h1><iframe  width="40%" height="400" src="https://www.youtube.com/embed/cAid8hM-8R4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                        <li class="slide"><h1>1시간</h1><iframe  width="40%" height="400" src="https://www.youtube.com/embed/V-rYe7qiur8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                    </ul>
+                </div>
+                <a href="#" id="prev"></a>
+                <a href="#" id="next"></a>
+            </div>
+        </div>  
+        <footer>
+            <p>All rights reserved by 'BBABBIKO - Summer Killer'</p>
+        </footer>
+    </div>
+</body>
+</html>
